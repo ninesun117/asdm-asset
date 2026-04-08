@@ -1,0 +1,168 @@
+# ASDM Specs Repository
+
+This directory contains general specifications (rules) for various technology stacks and development practices. These specs are automatically added by `asdm-bootstrapper` as needed.
+
+## Overview
+
+Specs in this directory provide:
+- Coding standards and best practices
+- Performance guidelines
+- Testing strategies
+- Architecture recommendations
+
+## Directory Structure
+
+```
+specs/
+├── specs-registry.json    # Registry file for Admin UI
+├── reactjs/               # React.js development specs
+│   ├── README.md
+│   ├── reactjs-coding-standard.md
+│   ├── reactjs-performance-guidelines.md
+│   └── reactjs-testing-guidelines.md
+├── nextjs-react-tailwind/ # Next.js React Tailwind specs
+│   ├── README.md
+│   ├── general-typescript-nextjs-rules.md
+│   ├── nextjs-conventions-best-practices.md
+│   ├── ui-styling-shadcn-tailwind.md
+│   ├── component-naming-structure.md
+│   ├── private-shared-components.md
+│   └── performance-optimization.md
+├── playwright-accessibility-testing/ # Playwright accessibility testing specs
+│   ├── README.md
+│   ├── accessibility-testing-basics.md
+│   ├── playwright-accessibility-setup.md
+│   ├── axe-core-integration.md
+│   ├── wcag-compliance-testing.md
+│   ├── keyboard-navigation-testing.md
+│   └── aria-validation.md
+├── playwright-integration-testing/ # Playwright integration testing specs
+│   ├── README.md
+│   ├── integration-testing-basics.md
+│   ├── api-mocking-with-playwright.md
+│   ├── user-flow-testing.md
+│   ├── component-interaction-testing.md
+│   └── state-management-testing.md
+├── playwright-e2e-testing/ # Playwright E2E testing specs
+│   ├── README.md
+│   ├── e2e-testing-basics.md
+│   ├── test-structure.md
+│   ├── selector-strategy.md
+│   ├── api-mocking-e2e.md
+│   └── user-flow-testing.md
+├── java-springboot-jpa/ # Java Spring Boot JPA specs
+│   ├── README.md
+│   ├── architecture-design.md
+│   ├── entities.md
+│   ├── repositories.md
+│   ├── services.md
+│   ├── dtos.md
+│   ├── rest-controllers.md
+│   └── response-handling.md
+├── java-general/ # Java general purpose specs
+│   ├── README.md
+│   ├── creating-objects.md
+│   ├── classes-interfaces.md
+│   ├── generics-enums.md
+│   ├── lambdas-streams.md
+│   ├── methods-api-design.md
+│   ├── exceptions-concurrency.md
+│   ├── serialization.md
+│   └── programming-paradigms.md
+└── {technology}/         # Additional tech stacks
+    └── README.md
+```
+
+## Available Specs
+
+### React.js
+- [Coding Standards](reactjs/reactjs-coding-standard.md)
+- [Performance Guidelines](reactjs/reactjs-performance-guidelines.md)
+- [Testing Guidelines](reactjs/reactjs-testing-guidelines.md)
+
+### Next.js React Tailwind
+- [General TypeScript & Next.js Rules](nextjs-react-tailwind/general-typescript-nextjs-rules.md)
+- [Next.js Conventions & Best Practices](nextjs-react-tailwind/nextjs-conventions-best-practices.md)
+- [UI & Styling with Shadcn UI and Tailwind](nextjs-react-tailwind/ui-styling-shadcn-tailwind.md)
+- [Component Naming & Directory Structure](nextjs-react-tailwind/component-naming-structure.md)
+- [Private vs Shared Components](nextjs-react-tailwind/private-shared-components.md)
+- [Performance Optimization](nextjs-react-tailwind/performance-optimization.md)
+
+### Playwright Accessibility Testing
+- [Accessibility Testing Basics](playwright-accessibility-testing/accessibility-testing-basics.md)
+- [Playwright Accessibility Setup](playwright-accessibility-testing/playwright-accessibility-setup.md)
+- [axe-core Integration](playwright-accessibility-testing/axe-core-integration.md)
+- [WCAG Compliance Testing](playwright-accessibility-testing/wcag-compliance-testing.md)
+- [Keyboard Navigation Testing](playwright-accessibility-testing/keyboard-navigation-testing.md)
+- [ARIA Validation](playwright-accessibility-testing/aria-validation.md)
+
+### Playwright Integration Testing
+- [Integration Testing Basics](playwright-integration-testing/integration-testing-basics.md)
+- [API Mocking with Playwright](playwright-integration-testing/api-mocking-with-playwright.md)
+- [User Flow Testing](playwright-integration-testing/user-flow-testing.md)
+- [Component Interaction Testing](playwright-integration-testing/component-interaction-testing.md)
+- [State Management Testing](playwright-integration-testing/state-management-testing.md)
+
+### Playwright E2E Testing
+- [E2E Testing Basics](playwright-e2e-testing/e2e-testing-basics.md)
+- [Test Structure](playwright-e2e-testing/test-structure.md)
+- [Selector Strategy](playwright-e2e-testing/selector-strategy.md)
+- [API Mocking for E2E](playwright-e2e-testing/api-mocking-e2e.md)
+- [User Flow Testing](playwright-e2e-testing/user-flow-testing.md)
+
+### Java Spring Boot JPA
+- [Architecture Design](java-springboot-jpa/architecture-design.md)
+- [Entities](java-springboot-jpa/entities.md)
+- [Repositories](java-springboot-jpa/repositories.md)
+- [Services](java-springboot-jpa/services.md)
+- [DTOs](java-springboot-jpa/dtos.md)
+- [REST Controllers](java-springboot-jpa/rest-controllers.md)
+- [Response Handling](java-springboot-jpa/response-handling.md)
+
+### Java General Purpose
+- [Creating Objects](java-general/creating-objects.md)
+- [Classes and Interfaces](java-general/classes-interfaces.md)
+- [Generics and Enums](java-general/generics-enums.md)
+- [Lambdas and Streams](java-general/lambdas-streams.md)
+- [Methods and API Design](java-general/methods-api-design.md)
+- [Exceptions and Concurrency](java-general/exceptions-concurrency.md)
+- [Serialization](java-general/serialization.md)
+- [Programming Paradigms](java-general/programming-paradigms.md)
+
+## Adding New Specs
+
+To add a new technology spec:
+
+1. Create a new directory under `specs/`
+2. Add README.md with overview and index
+3. Add relevant specification documents
+4. Update `specs-registry.json` with new entry
+
+Example structure:
+```
+specs/
+├── {tech-name}/
+│   ├── README.md
+│   ├── {tech-name}-coding-standard.md
+│   ├── {tech-name}-performance-guidelines.md
+│   └── {tech-name}-testing-guidelines.md
+```
+
+## Registry
+
+The `specs-registry.json` file tracks all available specs and is used by the Admin UI to display spec details.
+
+## Usage
+
+AI agents automatically receive relevant specs based on the technology stack detected in the workspace. These specs help maintain consistent code quality and follow best practices.
+
+## Integration
+
+Specs integrate with:
+- `asdm-bootstrapper`: Automatically adds specs to workspaces
+- AI coding assistants: Provides context and guidelines
+- Admin UI: Displays spec information and details
+
+## Support
+
+For questions about specs, visit [ASDM Platform](https://platform.asdm.ai).
