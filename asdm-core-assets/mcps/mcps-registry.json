@@ -8,9 +8,9 @@
     {
       "id": "kubernetes-mcp-server",
       "guid": "d4e5f6a7-b8c9-0123-defa-456789012345",
-      "name": "Kubernetes MCP Server",
+      "name": "Kubernetes MCP Server test",
       "description": "TypeScript MCP server for comprehensive Kubernetes cluster management via kubectl - supports 22 tools for resource operations, Helm charts, port forwarding, node management, and OpenTelemetry observability with non-destructive mode and secrets masking",
-      "version": "3.3.0",
+      "version": "3.3.1",
       "downloadUrl": "kubernetes-mcp-server.zip",
       "path": "kubernetes-mcp-server",
       "entryPoint": "kubernetes-mcp-server/README.md",
